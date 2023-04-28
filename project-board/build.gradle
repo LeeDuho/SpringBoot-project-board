@@ -6,7 +6,7 @@ plugins {
 
 group = 'com.springboot'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '11'
+sourceCompatibility = "16"
 
 configurations {
 	compileOnly {
@@ -73,3 +73,4 @@ clean {
 //		attributes('Main-Class': 'com.fastcampus.projectboard.FastCampusProjectBoardApplication')
 //	}
 //}
+targetCompatibility = JavaVersion.VERSION_16
