@@ -1,6 +1,7 @@
 package com.springboot.projectboard.service;
 
 import com.springboot.projectboard.domain.Article;
+import com.springboot.projectboard.dto.ArticleCommentDto;
 import com.springboot.projectboard.repository.ArticleCommentRepository;
 import com.springboot.projectboard.repository.ArticleRepository;
 import org.junit.jupiter.api.DisplayName;
