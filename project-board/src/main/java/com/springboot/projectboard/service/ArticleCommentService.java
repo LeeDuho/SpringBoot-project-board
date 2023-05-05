@@ -14,6 +14,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityNotFoundException;
 import java.util.List;
+
 @Slf4j
 @RequiredArgsConstructor
 @Transactional
@@ -39,6 +40,15 @@ public class ArticleCommentService {
             articleCommentRepository.save(dto.toEntity(article, userAccount));
         } catch (EntityNotFoundException e) {
             log.warn("댓글 저장 실패. 댓글 작성에 필요한 정보를 찾을 수 없습니다 - {}", e.getLocalizedMessage());
+        }
+    }
+
+    public void updateArticleComment(ArticleCommentDto dto) {
+        try {
+            ArticleComment articleComment = articleCommentRepository.getReferenceById(dto.id());
+            if (dto.content() != null) { articleComment.setContent(dto.content()); }
+        } catch (EntityNotFoundException e) {
+            log.warn("댓글 업데이트 실패. 댓글을 찾을 수 없습니다 - dto: {}", dto);
         }
     }
 
