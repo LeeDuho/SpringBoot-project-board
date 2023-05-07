@@ -1,5 +1,6 @@
 package com.springboot.projectboard.controller;
 
+import com.springboot.projectboard.dto.UserAccountDto;
 import com.springboot.projectboard.dto.request.ArticleCommentRequest;
 import com.springboot.projectboard.dto.security.BoardPrincipal;
 import com.springboot.projectboard.service.ArticleCommentService;
@@ -9,7 +10,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-
 
 @RequiredArgsConstructor
 @RequestMapping("/comments")
