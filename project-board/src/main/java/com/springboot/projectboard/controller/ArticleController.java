@@ -2,6 +2,7 @@ package com.springboot.projectboard.controller;
 
 import com.springboot.projectboard.domain.constant.FormStatus;
 import com.springboot.projectboard.domain.constant.SearchType;
+import com.springboot.projectboard.dto.UserAccountDto;
 import com.springboot.projectboard.dto.request.ArticleRequest;
 import com.springboot.projectboard.dto.response.ArticleResponse;
 import com.springboot.projectboard.dto.response.ArticleWithCommentsResponse;
@@ -14,6 +15,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
@@ -81,7 +83,7 @@ public class ArticleController {
         return "articles/form";
     }
 
-    @PostMapping("/form")
+    @PostMapping ("/form")
     public String postNewArticle(
             @AuthenticationPrincipal BoardPrincipal boardPrincipal,
             ArticleRequest articleRequest
