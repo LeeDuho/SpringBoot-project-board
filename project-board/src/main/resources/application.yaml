@@ -29,37 +29,11 @@ spring:
   thymeleaf3:
     decoupled-logic: true
 
+---
 
-#  security:
-#    oauth2:
-#      client:
-#        registration:
-#          kakao:
-#            client-id: ${KAKAO_OAUTH_CLIENT_ID}
-#            client-secret: ${KAKAO_OAUTH_CLIENT_SECRET}
-#            authorization-grant-type: authorization_code
-#            redirect-uri: "{baseUrl}/login/oauth2/code/kakao"
-#            client-authentication-method: POST
-#        provider:
-#          kakao:
-#            authorization-uri: https://kauth.kakao.com/oauth/authorize
-#            token-uri: https://kauth.kakao.com/oauth/token
-#            user-info-uri: https://kapi.kakao.com/v2/user/me
-#            user-name-attribute: id
-
-#---
-#
-#spring:
-#  config.activate.on-profile: testdb
-#  datasource:
-#    url: jdbc:h2:mem:board;mode=mysql
-#    driver-class-name: org.h2.Driver
-##  jpa.hibernate.ddl-auto: create
-#  sql.init.mode: always
-#  test.database.replace: none
-
-#---
-#
-#spring:
-#  config.activate.on-profile: test
-#  datasource.url: jdbc:h2:mem:testdb
+spring:
+  config.activate.on-profile: heroku
+  datasource:
+    url: ${CLEARDB_DATABASE_URL}
+  jpa.hibernate.ddl-auto: create
+  sql.init.mode: always
