@@ -75,3 +75,7 @@ jar {
 	}
 }
 targetCompatibility = JavaVersion.VERSION_16
+
+bootJar {
+	destinationDirectory = file("./target")
+}
