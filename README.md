@@ -1,6 +1,6 @@
 
 ## 개발 환경
-* Intellij IDEA Ultimate 2022.1.1 ~ 2022.1.3
+* Intellij IDEA Ultimate
 * Java 17
 * Gradle 7.4.1
 * Spring Boot 2.7.0
@@ -28,6 +28,8 @@
 * Heroku
 
 ## 데모 페이지
+
+https://project-board-duho.herokuapp.com/
 
 * 유즈케이스 다이어그램: 
 * API Endpoint 구글 시트: 
