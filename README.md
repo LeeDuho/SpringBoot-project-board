@@ -31,7 +31,7 @@ https://project-board-duho.herokuapp.com/
 
 
 #
-* 유즈케이스 다이어그램:
+* 유즈케이스 다이어그램
 
 ![use-case](https://github.com/LeeDuho/SpringBoot-project-board/assets/80142640/92ae3524-d97b-461a-a17a-2efee6dc3666)
 
