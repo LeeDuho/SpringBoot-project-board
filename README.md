@@ -29,6 +29,9 @@
 
 https://project-board-duho.herokuapp.com/
 
-* 유즈케이스 다이어그램: 
-* API Endpoint 구글 시트: 
-* 어드민 서비스:
+
+#
+* 유즈케이스 다이어그램:
+
+![use-case](https://github.com/LeeDuho/SpringBoot-project-board/assets/80142640/92ae3524-d97b-461a-a17a-2efee6dc3666)
+
